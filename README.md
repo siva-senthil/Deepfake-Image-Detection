@@ -1,7 +1,7 @@
 # 🔍 Deep Fake Detection using CSWin Transformer
 
 > **Capstone Project — VIT Vellore, April 2024**  
-> Atulya Prabhanjan M  · Siva Senthil Manikkam R
+> Atulya Prabhanjan M  · Siva Senthil Manikkam R  
 > Guide: Prof. R. Arumuga Arun
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
