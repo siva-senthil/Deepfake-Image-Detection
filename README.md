@@ -39,12 +39,10 @@ deepfake-detection/
 │   ├── vgg16_baseline.py               # VGG16 baseline
 │   └── xception_baseline.py            # Xception-based detection
 │
-├── api/
-│   └── main.py                   # FastAPI inference server for CSWin
-│
 ├── results/
 │   └── model_comparison.md       # Performance table & notes
 │
+├── app.py
 ├── requirements.txt
 └── README.md
 ```
@@ -56,7 +54,7 @@ deepfake-detection/
 ### CSWin Transformer (Best Performer)
 The backbone is the **Cross-Shaped Window Transformer**, which divides attention into horizontal and vertical stripes simultaneously. This reduces computational complexity from O(N²) to O(N√N) compared to standard ViTs, while preserving the ability to detect subtle deepfake artifacts across the full image.
 
-The inference API (`api/main.py`) is a FastAPI server built around this model.
+The Streamlit app (`app.py`) loads the trained CSWin model and lets you upload any face image for real-time deepfake detection.
 
 ### CNN Baselines
 Each notebook is standalone and trains the respective model from scratch on the [Deep Fake Face Detection dataset](https://www.kaggle.com/datasets/vasubhut/deep-fake-face-detection) (190K images, 256×256px).
@@ -97,15 +95,14 @@ cd deepfake-detection
 pip install -r requirements.txt
 ```
 
-### 3. Run a notebook
-Open any notebook in `baselines/` in Jupyter or Google Colab and update the dataset paths.
+### 3. Run a baseline training script
+Run any script in `baselines/` directly with Python. Update the dataset paths at the top of each file.
 
-### 4. Run the inference API (CSWin)
-> **Note:** Model weights (`cswinmodel.pkl`) are not included due to file size (~92 MB). To use the API, train the model using the CSWin architecture defined in `api/main.py` and save the weights.
+### 4. Run the Streamlit app (CSWin)
+Upload your model weights through the sidebar when the app launches.
 
 ```bash
-cd api
-uvicorn main:app --reload
+streamlit run app.py
 ```
 
 ---
