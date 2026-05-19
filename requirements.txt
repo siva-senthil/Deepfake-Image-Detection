@@ -1,0 +1,32 @@
+# Deep Fake Detection — Dependencies
+# Tested on Google Colab with NVIDIA Tesla T4 (CUDA 11.2)
+# Project date: April 2024
+
+# ── Core Deep Learning ─────────────────────────────────────────────────────
+tensorflow==2.9.0
+torch==1.12.1
+torchvision==0.13.1
+
+# ── CSWin Transformer / ViT utilities ──────────────────────────────────────
+timm==0.6.12
+einops==0.6.1
+
+# ── CNN Model extras ───────────────────────────────────────────────────────
+mtcnn==0.1.1
+keras-vggface==0.6
+keras-applications==1.0.8
+
+# ── API / Serving ──────────────────────────────────────────────────────────
+fastapi==0.95.2
+uvicorn==0.22.0
+python-multipart==0.0.6
+
+# ── Data & Visualisation ───────────────────────────────────────────────────
+numpy==1.23.5
+pandas==1.5.3
+matplotlib==3.7.1
+seaborn==0.12.2
+scikit-learn==1.2.2
+Pillow==9.5.0
+tqdm==4.65.0
+joblib==1.2.0
