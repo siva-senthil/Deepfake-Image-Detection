@@ -1,4 +1,4 @@
-# 🔍 Deep Fake Detection using CSWin Transformer
+# Deep Fake Detection using CSWin Transformer
 
 > **Capstone Project — VIT Vellore, April 2024**  
 > Atulya Prabhanjan M  · Siva Senthil Manikkam R  
@@ -11,7 +11,7 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 This project builds a deepfake image detection system comparing four deep learning architectures:
 
@@ -28,7 +28,7 @@ This work was published in **Discover Computing (Springer, 2025)**: [https://doi
 
 ---
 
-## 🗂️ Repository Structure
+## Repository Structure
 
 ```
 deepfake-detection/
@@ -49,7 +49,7 @@ deepfake-detection/
 
 ---
 
-## 🧠 Models
+## Models
 
 ### CSWin Transformer (Best Performer)
 The backbone is the **Cross-Shaped Window Transformer**, which divides attention into horizontal and vertical stripes simultaneously. This reduces computational complexity from O(N²) to O(N√N) compared to standard ViTs, while preserving the ability to detect subtle deepfake artifacts across the full image.
@@ -61,7 +61,7 @@ Each notebook is standalone and trains the respective model from scratch on the 
 
 ---
 
-## 📦 Dataset
+## Dataset
 
 **Primary:** [Deep Fake Face Detection](https://www.kaggle.com/datasets/vasubhut/deep-fake-face-detection) (Kaggle)
 
@@ -82,7 +82,7 @@ TEST_DIR       = "path/to/dataset/Test"
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the repo
 ```bash
@@ -107,7 +107,7 @@ streamlit run app.py
 
 ---
 
-## 📡 API Endpoints
+## API Endpoints
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -116,7 +116,7 @@ streamlit run app.py
 
 ---
 
-## ⚙️ Training Configuration
+## Training Configuration
 
 | Parameter | Value |
 |---|---|
@@ -129,7 +129,7 @@ streamlit run app.py
 
 ---
 
-## 📄 Publication
+## Publication
 
 This work was accepted and published in **Discover Computing (Springer), 2025**:
 
