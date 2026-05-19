@@ -33,11 +33,11 @@ This work was published in **Discover Computing (Springer, 2025)**: [https://doi
 ```
 deepfake-detection/
 │
-├── notebooks/
-│   ├── MTCNN.ipynb               # MTCNN-based detection
-│   ├── InceptionV3.ipynb         # InceptionV3-based detection
-│   ├── VGG16.ipynb               # VGG16 baseline
-│   └── Xception.ipynb            # Xception-based detection
+├── baselines/
+│   ├── mtcnn_baseline.py
+│   ├── inceptionv3_baseline.py         # InceptionV3-based detection
+│   ├── vgg16_baseline.py               # VGG16 baseline
+│   └── xception_baseline.py            # Xception-based detection
 │
 ├── api/
 │   └── main.py                   # FastAPI inference server for CSWin
@@ -98,7 +98,7 @@ pip install -r requirements.txt
 ```
 
 ### 3. Run a notebook
-Open any notebook in `notebooks/` in Jupyter or Google Colab and update the dataset paths.
+Open any notebook in `baselines/` in Jupyter or Google Colab and update the dataset paths.
 
 ### 4. Run the inference API (CSWin)
 > **Note:** Model weights (`cswinmodel.pkl`) are not included due to file size (~92 MB). To use the API, train the model using the CSWin architecture defined in `api/main.py` and save the weights.
@@ -137,3 +137,9 @@ uvicorn main:app --reload
 This work was accepted and published in **Discover Computing (Springer), 2025**:
 
 > Magesh, A.P., Ramakrishnan, S.S.M., Arun, R.A., Priyanka, N., Kartheek, M.N. *Building an efficient Deep Fake detection system using the recognition capabilities of convolutional neural networks and transformers.* Discover Computing 28, 99 (2025). https://doi.org/10.1007/s10791-025-09586-2
+
+---
+
+## 🙏 Acknowledgements
+
+Guided by **Prof. R. Arumuga Arun**, Assistant Professor Sr. Grade 1, SCOPE, VIT Vellore.
