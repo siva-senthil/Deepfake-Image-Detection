@@ -137,9 +137,3 @@ uvicorn main:app --reload
 This work was accepted and published in **Discover Computing (Springer), 2025**:
 
 > Magesh, A.P., Ramakrishnan, S.S.M., Arun, R.A., Priyanka, N., Kartheek, M.N. *Building an efficient Deep Fake detection system using the recognition capabilities of convolutional neural networks and transformers.* Discover Computing 28, 99 (2025). https://doi.org/10.1007/s10791-025-09586-2
-
----
-
-## 🙏 Acknowledgements
-
-Guided by **Prof. R. Arumuga Arun**, Assistant Professor Sr. Grade 1, SCOPE, VIT Vellore.
