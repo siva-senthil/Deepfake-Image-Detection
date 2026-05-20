@@ -1,9 +1,3 @@
-"""
-VGG16 Baseline — Deep Fake Detection
-Dataset: Deep Fake Face Detection (Kaggle)
-Paper: https://doi.org/10.1007/s10791-025-09586-2
-"""
-
 import os
 import numpy as np
 import tensorflow as tf
